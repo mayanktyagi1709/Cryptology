@@ -9,16 +9,18 @@ import {
   MenuOutlined,
 } from "@ant-design/icons";
 
+import logo from "../images/cryptocurrency.png";
+
 const Navbar = () => {
   return (
     <div className="nav-container">
       <div className="logo-container">
-        <Avatar src={""} size="large" />
+        <Avatar src={logo} size="large" />
         <Typography.Title level={2} className="logo">
           <Link to="/">Cryptology</Link>
         </Typography.Title>
-
-        <Menu theme="dark">
+      </div>
+      <Menu theme="dark">
           <Menu.Item icon={<HomeOutlined />}>
             <Link to="/">Home</Link>
           </Menu.Item>
@@ -32,7 +34,6 @@ const Navbar = () => {
             <Link to="/news">News</Link>
           </Menu.Item>
         </Menu>
-      </div>
     </div>
   );
 };
